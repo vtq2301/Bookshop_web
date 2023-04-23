@@ -1,0 +1,241 @@
+<!--  RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Vũ Tiến Quang
+  ID: S3981278
+  Acknowledgement: Acknowledge the resources that you use here.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mushz's bookshop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--HEADERS STARTS-->
+    <header>
+        <nav class="navbar">
+            <!-- LOGO -->
+            <div class="logo"><a href="/homepage.html">MUSHZ📚</a></div>
+
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links">
+
+                <!-- USING CHECKBOX HACK -->
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+                <!-- NAVIGATION MENUS -->
+                <div class="menu">
+
+                    <li><a href="/homepage.html">Home</a></li>
+                    <!-- FICTION DROPDOWN -->
+                    <li class="menu-item">
+                        <a href="/fiction.html">Fiction</a>
+
+                        <!-- DROPDOWN MENU -->
+                        <ul class="dropdown">
+                            <li><a href="/">Romance</a></li>
+                            <li><a href="/">Science fiction</a></li>
+                            <li><a href="/">Horror</a></li>
+                        </ul>
+                    </li>   
+                    <!-- NON-FICTION DROPDOWN -->
+                    <li class="menu-item">
+                        <a href="/non-fiction.html">Non-Fiction</a>
+
+                        <!-- DROPDOWN MENU -->
+                        <ul class="dropdown">
+                            <li><a href="/">History</a></li>
+                            <li><a href="/">Politics & Current Affairs</a></li>
+                            <li><a href="/">Business & Finance</a></li>
+                        </ul>
+                    </li>   
+                    <!-- TEXTBOOK DROPDOWN -->
+                    <li class="menu-item">
+                        <a href="/textbooks.html">Textbooks</a>
+
+                        <!-- DROPDOWN MENU -->
+                        <ul class="dropdown">
+                            <li><a href="/">Math & Science</a></li>
+                            <li><a href="/">Social Science</a></li>
+                            <li><a href="/">Professional and Technical</a></li>
+                        </ul>
+                    </li>   
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <!-- HEADER ENDS -->
+    <!-- INTRO VIDEO -->
+    <div class="intro_video">
+        <iframe 
+            width="1198" height="674" 
+            src="https://www.youtube.com/embed/AUw7laSlcbo" 
+            title="Reading Changes your Brain, let me explain." 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+        </iframe>
+    </div>
+    
+    <!-- BODY  -->
+    <h1>Categories</h1>
+    <!-- Cat 1 -->
+    <section class="rack">
+        <!-- TITLE -->
+        <h2 class="titles center">
+            <a href="/fiction.html">Fiction</a>
+        </h2>
+        <article class="flex-container center">
+            <!-- ITEM 1 -->
+            <div class="items">
+                <img class="item-image" src="images\Fiction\horror1.jpeg" alt="Dark Man">
+                <!-- HOVER -->
+                <div class="middle">
+                    <div class="text">
+                        <a href="/">CHECK IT OUT NOW</a>
+                    </div>
+                </div>
+                <a href="/" class="item-link">
+                    <h4>The Dark Man <br> Desnond Doane <br> 300.000 VND</h4>
+                </a>
+            </div>
+            <!-- ITEM 2 -->
+            <div class="items">
+                <img class="item-image" src="images\Fiction\romance1.jpeg" alt="Ignite Me">
+                <!-- HOVER -->
+                <div class="middle">
+                    <div class="text">
+                        <a href="/">CHECK IT OUT NOW</a>
+                    </div>
+                </div>
+                <a href="/" class="item-link">
+                    <h4>Ignite me <br> Tameren Mat <br> 300.000 VND</h4>
+                </a>
+            </div>
+            <!-- ITEM 3 -->
+            <div class="items">
+                <img class="item-image" src="images\Fiction\scifi1.jpeg" alt="Ender's Game">
+                <!-- HOVER -->
+                <div class="middle">
+                    <div class="text">
+                        <a href="/">CHECK IT OUT NOW</a>
+                    </div>
+                </div>
+                <a href="/" class="item-link">
+                    <h4>Ender's Game <br> Oson Scott <br> 300.000 VND</h4>
+                </a>
+            </div>
+        </article>
+    </section>
+    <!-- Cat 2 -->
+    <section class="rack">
+        <!-- TITLE -->
+        <h2 class="titles center">
+            <a href="/non-fiction.html">Non-fiction</a>
+        </h2>
+        <article class="flex-container center">
+            <!-- ITEM 1 -->
+            <div class="items">
+                <img class="item-image" src="images\non-fiction\finance1.jpeg" alt="The finance">
+                <!-- HOVER -->
+                <div class="middle">
+                    <div class="text">
+                        <a href="/">CHECK IT OUT NOW</a>
+                    </div>
+                </div>
+                <a href="/" class="item-link">
+                    <h4>The Finance Book <br> 300.000 VND</h4>
+                </a>
+            </div>
+            <!-- ITEM 2 -->
+            <div class="items">
+                <img class="item-image" src="images\non-fiction\history1.jpeg" alt="Black history">
+                <!-- HOVER -->
+                <div class="middle">
+                    <div class="text">
+                        <a href="/">CHECK IT OUT NOW</a>
+                    </div>
+                </div>
+                <a href="/" class="item-link">
+                    <h4>Black History Book <br> 300.000 VND</h4>
+                </a>
+            </div>
+            <!-- ITEM 3 -->
+            <div class="items">
+                <img class="item-image" src="images\non-fiction\politic1.jpeg" alt="politic">
+                <!-- HOVER -->
+                <div class="middle">
+                    <div class="text">
+                        <a href="/">CHECK IT OUT NOW</a>
+                    </div>
+                </div>
+                <a href="/" class="item-link">
+                    <h4>The Politics Book <br> 300.000 VND</h4>
+                </a>
+            </div>
+        </article>
+    </section>
+    <!-- Cat 3 -->
+    <section class="rack">
+        <!-- TITLE -->
+        <h2 class="titles center">
+            <a href="/textbooks.html">Textbook</a>
+        </h2>
+        <article class="flex-container center">
+            <!-- ITEM 1 -->
+            <div class="items">
+                <img class="item-image" src="images\Textbooks\math1.jpeg" alt="The math book">
+                <!-- HOVER -->
+                <div class="middle">
+                    <div class="text">
+                        <a href="/">CHECK IT OUT NOW</a>
+                    </div>
+                </div>
+                <a href="/" class="item-link">
+                    <h4>The Math Book <br> Clifford & Pickover <br> 300.000 VND</h4>
+                </a>
+            </div>
+            <!-- ITEM 2 -->
+            <div class="items">
+                <img class="item-image" src="images\Textbooks\social2.jpeg" alt="social science 2">
+                <!-- HOVER -->
+                <div class="middle">
+                    <div class="text">
+                        <a href="social2.html">CHECK IT OUT NOW!</a>
+                    </div>
+                </div>
+                <a href="social2.html" class="item-link">
+                    <h4>Science and Social Science: An Introduction<br> Malcolm Williams <br> 300.000 VND</h4>
+                </a>
+            </div>
+            <!-- ITEM 3 -->
+            <div class="items">
+                <img class="item-image" src="images\Textbooks\tech1.jpeg" alt="Technical handbook">
+                <!-- HOVER -->
+                <div class="middle">
+                    <div class="text">
+                        <a href="/">CHECK IT OUT NOW</a>
+                    </div>
+                </div>
+                <a href="/" class="item-link">
+                    <h4>Handbook of Technical Diagnostics <br> Horst Czichos <br> 300.000 VND</h4>
+                </a>
+            </div>
+        </article>
+    </section>
+    <!-- BODY END -->
+
+    <!-- FOOTER STARTS  -->
+    <footer>
+        <a href="#">About Us</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+        <a href="#">Copyright</a>
+        <a href="/contact.html">Contact Us</a>
+    </footer>
+</body>
+</html>

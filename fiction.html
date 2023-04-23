@@ -1,0 +1,232 @@
+<!--  RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Vũ Tiến Quang
+  ID: S3981278
+  Acknowledgement: Acknowledge the resources that you use here.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textbook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="fiction">
+    <!--HEADERS STARTS-->
+    <header>
+        <nav class="navbar">
+            <!-- LOGO -->
+            <div class="logo"><a href="/homepage.html">MUSHZ📚</a></div>
+
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links">
+
+                <!-- USING CHECKBOX HACK -->
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+                <!-- NAVIGATION MENUS -->
+                <div class="menu">
+
+                    <li><a href="/homepage.html">Home</a></li>
+                    <!-- FICTION DROPDOWN -->
+                    <li class="menu-item">
+                        <a href="/fiction.html">Fiction</a>
+
+                        <!-- DROPDOWN MENU -->
+                        <ul class="dropdown">
+                            <li><a href="/">Romance</a></li>
+                            <li><a href="/">Science fiction</a></li>
+                            <li><a href="/">Horror</a></li>
+                        </ul>
+                    </li>   
+                    <!-- NON-FICTION DROPDOWN -->
+                    <li class="menu-item">
+                        <a href="/non-fiction.html">Non-Fiction</a>
+
+                        <!-- DROPDOWN MENU -->
+                        <ul class="dropdown">
+                            <li><a href="/">History</a></li>
+                            <li><a href="/">Politics & Current Affairs</a></li>
+                            <li><a href="/">Business & Finance</a></li>
+                        </ul>
+                    </li>   
+                    <!-- TEXTBOOK DROPDOWN -->
+                    <li class="menu-item">
+                        <a href="/textbooks.html">Textbooks</a>
+
+                        <!-- DROPDOWN MENU -->
+                        <ul class="dropdown">
+                            <li><a href="/">Math & Science</a></li>
+                            <li><a href="/">Social Science</a></li>
+                            <li><a href="/">Professional and Technical</a></li>
+                        </ul>
+                    </li>   
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <!-- HEADER ENDS -->
+
+    <!-- BREADCRUMBS -->
+    <ul class="breadcrumb">
+        <li><a href="homepage.html">Home</a></li>
+        <li>Fiction</li>
+    </ul>
+
+    <!-- BODY STARTS -->
+    <h1>Fiction</h1>
+    <!-- Cat 1 -->
+    <section class="rack">
+        <!-- TITLE -->
+        <h3 class="titles center">Science Fiction</h3>
+        <article class="flex-container center">
+            <!-- ITEM 1 -->
+            <div class="items">
+                <img class="item-image" src="images\fiction\scifi1.jpeg" alt="Scifi1">
+                <!-- HOVER -->
+                <div class="middle">
+                    <div class="text">
+                        <a href="/">CHECK IT OUT NOW</a>
+                    </div>
+                </div>
+                <a href="/" class="item-link">
+                    <h4>Scifi1 <br> Authors <br> 300.000 VND</h4>
+                </a>
+            </div>
+            <!-- ITEM 2 -->
+            <div class="items">
+                <img class="item-image" src="images\fiction\scifi2.jpeg" alt="scifi2">
+                <!-- HOVER -->
+                <div class="middle">
+                    <div class="text">
+                        <a href="/">CHECK IT OUT NOW</a>
+                    </div>
+                </div>
+                <a href="/" class="item-link">
+                    <h4>Scifi2 <br> Authors <br> 300.000 VND</h4>
+                </a>
+            </div>
+            <!-- ITEM 3 -->
+            <div class="items">
+                <img class="item-image" src="images\fiction\scifi3.jpeg" alt="scifi3">
+                <!-- HOVER -->
+                <div class="middle">
+                    <div class="text">
+                        <a href="/">CHECK IT OUT NOW</a>
+                    </div>
+                </div>
+                <a href="/" class="item-link">
+                    <h4>Scifi3 <br> Authors <br> 300.000 VND</h4>
+                </a>
+            </div>
+        </article>
+    </section>
+    <!-- Cat 2 -->
+    <section class="rack">
+        <!-- TITLE -->
+        <h3 class="titles center">Horror</h3>
+        <article class="flex-container center">
+            <!-- ITEM 1 -->
+            <div class="items">
+                <img class="item-image" src="images\fiction\horror1.jpeg" alt="Horror1">
+                <!-- HOVER -->
+                <div class="middle">
+                    <div class="text">
+                        <a href="/">CHECK IT OUT NOW</a>
+                    </div>
+                </div>
+                <a href="/" class="item-link">
+                    <h4>Horror1 <br> Authors <br> 300.000 VND</h4>
+                </a>
+            </div>
+            <!-- ITEM 2 -->
+            <div class="items">
+                <img class="item-image" src="images\fiction\horror2.jpeg" alt="horror2">
+                <!-- HOVER -->
+                <div class="middle">
+                    <div class="text">
+                        <a href="/">CHECK IT OUT NOW!</a>
+                    </div>
+                </div>
+                <a href="/" class="item-link">
+                    <h4>Horror2 <br> Authors <br> 300.000 VND</h4>
+                </a>
+            </div>
+            <!-- ITEM 3 -->
+            <div class="items">
+                <img class="item-image" src="images\fiction\horror3.jpeg" alt="horror3">
+                <!-- HOVER -->
+                <div class="middle">
+                    <div class="text">
+                        <a href="/">CHECK IT OUT NOW</a>
+                    </div>
+                </div>
+                <a href="/" class="item-link">
+                    <h4>Horror3 <br> Authors <br> 300.000 VND</h4>
+                </a>
+            </div>
+        </article>
+    </section>
+    <!-- Cat 3 -->
+    <section class="rack">
+        <!-- TITLE -->
+        <h3 class="titles center">Romance</h3>
+        <article class="flex-container center">
+            <!-- ITEM 1 -->
+            <div class="items">
+                <img class="item-image" src="images\fiction\romance1.jpeg" alt="romance1">
+                <!-- HOVER -->
+                <div class="middle">
+                    <div class="text">
+                        <a href="/">CHECK IT OUT NOW</a>
+                    </div>
+                </div>
+                <a href="/" class="item-link">
+                    <h4>romance1 <br> Authors <br> 300.000 VND</h4>
+                </a>
+            </div>
+            <!-- ITEM 2 -->
+            <div class="items">
+                <img class="item-image" src="images\fiction\romance2.jpeg" alt="romance2">
+                <!-- HOVER -->
+                <div class="middle">
+                    <div class="text">
+                        <a href="/">CHECK IT OUT NOW</a>
+                    </div>
+                </div>
+                <a href="/" class="item-link">
+                    <h4>romance2 <br> Authors <br> 300.000 VND</h4>
+                </a>
+            </div>
+            <!-- ITEM 3 -->
+            <div class="items">
+                <img class="item-image" src="images\fiction\romance3.jpeg" alt="romance3">
+                <!-- HOVER -->
+                <div class="middle">
+                    <div class="text">
+                        <a href="/">CHECK IT OUT NOW</a>
+                    </div>
+                </div>
+                <a href="/" class="item-link">
+                    <h4>romance3 <br> Authors <br> 300.000 VND</h4>
+                </a>
+            </div>
+        </article>
+    </section>
+    <!-- BODY END -->
+
+    <!-- FOOTER STARTS  -->
+    <footer>
+        <a href="#">About Us</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+        <a href="#">Copyright</a>
+        <a href="/contact.html">Contact Us</a>
+    </footer>
+</body>
+</html>

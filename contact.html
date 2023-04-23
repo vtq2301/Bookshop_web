@@ -1,0 +1,129 @@
+<!--  RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Vũ Tiến Quang
+  ID: S3981278
+  Acknowledgement: Acknowledge the resources that you use here.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mushz's bookshop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--HEADERS STARTS-->
+    <header>
+        <nav class="navbar sticky">
+            <!-- LOGO -->
+            <div class="logo"><a href="/homepage.html">MUSHZ📚</a></div>
+
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links">
+
+                <!-- USING CHECKBOX HACK -->
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+                <!-- NAVIGATION MENUS -->
+                <div class="menu">
+
+                    <li><a href="/homepage.html">Home</a></li>
+                    <!-- FICTION DROPDOWN -->
+                    <li class="menu-item">
+                        <a href="/fiction.html">Fiction</a>
+
+                        <!-- DROPDOWN MENU -->
+                        <ul class="dropdown">
+                            <li><a href="/">Romance</a></li>
+                            <li><a href="/">Science fiction</a></li>
+                            <li><a href="/">Horror</a></li>
+                        </ul>
+                    </li>   
+                    <!-- NON-FICTION DROPDOWN -->
+                    <li class="menu-item">
+                        <a href="/non-fiction.html">Non-Fiction</a>
+
+                        <!-- DROPDOWN MENU -->
+                        <ul class="dropdown">
+                            <li><a href="/">History</a></li>
+                            <li><a href="/">Politics & Current Affairs</a></li>
+                            <li><a href="/">Business & Finance</a></li>
+                        </ul>
+                    </li>   
+                    <!-- TEXTBOOK DROPDOWN -->
+                    <li class="menu-item">
+                        <a href="/textbooks.html">Textbooks</a>
+
+                        <!-- DROPDOWN MENU -->
+                        <ul class="dropdown">
+                            <li><a href="/">Math & Science</a></li>
+                            <li><a href="/">Social Science</a></li>
+                            <li><a href="/">Professional and Technical</a></li>
+                        </ul>
+                    </li>   
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <!-- HEADER ENDS -->
+    <section class="contact-page">
+        <fieldset>
+            <legend><h1>Contact Us</h1></legend>
+            <!-- FORM STARTS -->
+            <form action="/" method="post">
+                <!-- SELECT DROPDOWN contact purpose  -->
+                <label for="contact-purpose">Contact purpose</label>
+                <select name="contact-purose" id="contact-purpose" required>
+                    <option value="sell" selected>I want to sell books</option>
+                    <option value="buy">I want to buy books</option>
+                </select>
+                <br>
+                <!-- TEXT name -->
+                <label for="name">Your name</label>
+                <input type="text" id="name" placeholder="Your name..." required>
+                <br>
+                <!-- EMAIL -->
+                <label for="email">Your email</label>
+                <input type="email" name="email" id="email" placeholder="Your email..." required>
+                <br>
+                <!-- TEL phone -->
+                <label for="phone">Phone number</label>
+                <input type="tel" name="phone" id="phone" placeholder="Your phone..." required>
+                <!-- CHECKBOX by email / by phone -->
+                <p>Choose your contact preference</p>
+                <input type="checkbox" name="contact" id="by-email" value="By-Email" >
+                <label for="by-email">By Email</label><br>
+                <input type="checkbox" name="contact" id="by-phone" value="By-Phone">
+                <label for="by-phone">By Phone</label>
+                <br>
+                <!-- RADIO yes/no newsletter -->
+                <p>Receive Weekly Newsletter</p>
+                <input type="radio" name="newsletter" id="yes" value="yes" checked required>
+                <label for="yes">Yes</label>
+                <input type="radio" name="newsletter" id="no" value="no">
+                <label for="no">No</label><br>
+                <!-- TEXTAREA notes -->
+                <label for="notes">Extra notes</label>
+                <textarea name="notes" id="notes" cols="30" rows="7" placeholder="type here..."></textarea>
+                <!-- BUTTON submit reset -->
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+            <!-- FORM ENDS -->
+        </fieldset>
+    </section>
+    
+    <!-- FOOTER STARTS  -->
+    <footer>
+        <a href="#">About Us</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+        <a href="#">Copyright</a>
+        <a href="/contact.html">Contact Us</a>
+    </footer>
+</body>

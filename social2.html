@@ -1,0 +1,123 @@
+<!--  RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Vũ Tiến Quang
+  ID: S3981278
+  Acknowledgement: Acknowledge the resources that you use here.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textbooks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <!--HEADERS STARTS-->
+    <header>
+        <nav class="navbar sticky">
+            <!-- LOGO -->
+            <div class="logo"><a href="/homepage.html">MUSHZ📚</a></div>
+
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links">
+
+                <!-- USING CHECKBOX HACK -->
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+                <!-- NAVIGATION MENUS -->
+                <div class="menu">
+
+                    <li><a href="/homepage.html">Home</a></li>
+                    <!-- FICTION DROPDOWN -->
+                    <li class="menu-item">
+                        <a href="/fiction.html">Fiction</a>
+
+                        <!-- DROPDOWN MENU -->
+                        <ul class="dropdown">
+                            <li><a href="/">Romance</a></li>
+                            <li><a href="/">Science fiction</a></li>
+                            <li><a href="/">Horror</a></li>
+                        </ul>
+                    </li>   
+                    <!-- NON-FICTION DROPDOWN -->
+                    <li class="menu-item">
+                        <a href="/non-fiction.html">Non-Fiction</a>
+
+                        <!-- DROPDOWN MENU -->
+                        <ul class="dropdown">
+                            <li><a href="/">History</a></li>
+                            <li><a href="/">Politics & Current Affairs</a></li>
+                            <li><a href="/">Business & Finance</a></li>
+                        </ul>
+                    </li>   
+                    <!-- TEXTBOOK DROPDOWN -->
+                    <li class="menu-item">
+                        <a href="/textbooks.html">Textbooks</a>
+
+                        <!-- DROPDOWN MENU -->
+                        <ul class="dropdown">
+                            <li><a href="/">Math & Science</a></li>
+                            <li><a href="/">Social Science</a></li>
+                            <li><a href="/">Professional and Technical</a></li>
+                        </ul>
+                    </li>   
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <!-- HEADER ENDS -->
+
+    <!-- BREADCRUMBS -->
+    <ul class="breadcrumb">
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="textbooks.html">Textbook</a></li>
+        <li>Science and Social Science: An Introduction</li>
+    </ul>
+
+    <!-- BODY -->
+    <section class="flex-detail center">
+        <!-- BOOK IMAGE -->
+        <div class="book-image">
+            <picture>
+                <source media="(max-width: 960px)" srcset="images\Textbooks\social2.jpeg">
+                <img src="images\Textbooks\social2.jpeg" alt="Book image">
+            </picture>
+        </div>
+        <!-- SMALL IMAGES -->
+        <div class="item-flex-container">
+            <img src="images\Textbooks\social2-small-3.PNG" alt="small image of the book" >
+            <img src="images\Textbooks\social2-small-1.PNG" alt="small image of the book" >
+            <img src="images\Textbooks\social2-small-2.PNG" alt="small image of the book" >
+        </div>
+        <!-- PRICE -->
+        <div class="item-flex-container price">
+            <p>300.000 VND</p>
+            <button>Add to cart</button>
+        </div>
+    </section>
+
+    <!-- DESCRIPTION -->
+    <article class="description">
+        <h2>Science and Social Science: An Introduction</h2>
+        <p>Is social science really a science at all, and if so in what sense? This is the first question that any course on the philosophy of the social sciences must tackle. In this brief introduction, Malcolm Williams gives students the grounding that will enable them to discuss the issues involved with confidence. He looks at:
+        <br>* The historical development of natural science and its distinctive methodology
+        <br>* the case in favour of an objective science of the social which follows the same rules
+        <br>* The arguments of social constructionists, interpretative sociologists and others against objectivity and even science itself
+        <br>* recent developments in natural science - for instance the rise of complexity theory and the increased questioning of positivism - which bring it closer to so...
+        <br>Source: Publisher
+        </p>
+    </article>
+
+    <!-- FOOTER STARTS  -->
+    <footer>
+        <a href="#">About Us</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+        <a href="#">Copyright</a>
+        <a href="/contact.html">Contact Us</a>
+    </footer>
+    </body>

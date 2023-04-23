@@ -1,0 +1,451 @@
+/*  RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Vũ Tiến Quang
+  ID: S3981278
+  Acknowledgement: Acknowledge the resources that you use here.
+*/
+
+/* color themes: https://colorhunt.co/palette/222831393e4600adb5eeeeee */
+/* #222831 , #393E46, #00ADB5, #EEEEEE */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
+/* UTILITIES */ 
+* {
+    margin:0; padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    background: url("background_image.jpg") 0 0;
+    background-size: contain;
+}
+
+.textbook {
+    background: url("bg-textbook.jpg");
+}
+
+.fiction {
+    background: url("bg-fiction.jpg");
+}
+
+.non-fiction {
+    background: url("bg-non-fiction.jpg");
+}
+h1 {
+    font-family: 'Pacifico', cursive;
+    text-transform: uppercase;
+    color: #EEEEEE;
+    text-shadow: 2px 2px #000;
+    font-size: 52px; 
+}
+
+a {
+    text-decoration: none;
+    color: #EEEEEE;
+}
+
+li {
+    list-style: none;
+}
+
+/* NAVBAR STYLING */
+.navbar {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #393E46;
+    color: #EEEEEE;
+}
+
+.nav-links a {
+    color: #fff;
+}
+
+.logo {
+    font-size: 32px;
+}
+
+/* MENU */
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+    
+}
+.menu-item::after {
+    content: "🔻"
+}
+.menu li:hover {
+    background-color: black;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+.menu li {
+    padding: 5px 14px;
+}
+
+/* DROPDOWN */
+.menu-item {
+    position: relative;
+}
+
+.dropdown {
+    background-color: black;
+    padding: 1em 0;
+    position: absolute;
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+    z-index: 1;
+}
+
+.dropdown li a {
+    cursor: not-allowed;
+}
+
+.dropdown li + li {
+    margin-top: 10px;
+}
+
+.dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+}
+
+.dropdown li:hover {
+    background-color: #4c9e9e;
+}
+
+.menu-item:hover .dropdown {
+    display: block;
+}
+
+/* RESPONSIVE NAVBAR MENU STARTS */
+
+/* CHECKBOX HACK */
+
+#checkbox_toggle {
+    display: none;
+} 
+    
+/* HAMBURGER MENU */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+/* INTRO VIDEO  */
+.intro_video {
+    display: flex;
+    justify-content: center;
+    background-color: #222831;
+    width: 100%; height: 60%;
+}
+
+/* MEDIA QUERIES FOR NAVBAR */
+@media screen and (max-width: 960px) {
+    .menu {
+        display:none;
+        position: absolute;
+        background-color: #222831;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+    .menu li:hover {   
+        display: inline-block;
+        /* background-color:#4c9e9e; */
+        transition: 0.3s ease;
+    }
+
+    .menu li + li {
+        margin-top: 12px;
+    }
+
+    input[type=checkbox]:checked ~ .menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .dropdown {
+        left: 50%;
+        top: 30px;
+        transform: translateX(35%);
+    }
+
+    .dropdown li:hover {
+        background-color: #4c9e9e;
+    }
+}
+/* END OF MEDIA  */
+
+/* HOMEPAGE BODY STYLING */
+.rack + .rack {
+    margin-top: 20px;
+}
+.titles {
+    background-color:#393E46; 
+    width:fit-content;
+    color: #eee;
+
+}
+.titles {
+    text-align: center;
+    padding: 15px;
+}
+
+.titles > a:hover {
+    text-decoration: underline;
+}
+.center {
+    margin: auto;
+}
+/* CONTAINER STYLING */
+.flex-container {
+    padding: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: rgba(76, 158, 158,0.8); 
+    width: 75%;
+    border: #000 double thick;
+}
+
+.flex-container > .items {
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    
+}
+/* MAKE BOOK'S NAME BLACK FOR VISIBILITY */
+.item-link {
+    color: #000;
+}
+
+.item-link:hover {
+    color: #EEEEEE;
+    text-decoration: underline;
+}
+
+/* IMAGE HOVER STARTS*/
+.item-image {
+    width: 200px;
+    height: 300px;
+    object-fit: none;
+    margin: auto;
+    transition: .3s ease-in;
+    backface-visibility: hidden;
+    display: block;
+}
+
+.middle {
+    transition: .3s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* -ms-transform: translate(-50%, -50%); */
+    text-align: center;
+}
+
+.text {
+    border: whitesmoke solid thin;
+}
+
+.items:hover .item-image{
+    opacity: 0.3;
+}
+
+.items:hover .middle {
+    opacity: 1;
+}
+
+/* MEDIA QUERIES FOR CONTAINER IN BODY */
+@media screen and (max-width: 960px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
+
+/* FOOTER STYLING */
+footer {
+    position: relative;
+    bottom: 0; /* STICK FOOTER TO THE BOTTOM */
+    height: 2.5rem;
+    width: 100%;
+    text-align: end;
+    background-color: #393E46;
+}
+
+footer > a {
+    padding-left: 10px;
+}
+
+footer > a:hover {
+    background-color: burlywood;
+}
+
+/* BREADCRUMBS STYLING */
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: burlywood;
+}
+
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: ">";
+}
+
+ul.breadcrumb li a {
+    color: #000;
+    text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+    color: #eee;
+    text-decoration: underline;
+}
+
+/* DETAIL PAGE IMAGES */
+/* BIG FLEX BOX  */
+.flex-detail {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 40px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+/* BOOK IMAGE */
+.book-image {
+    background-color: rgba(128,128,128,0.5);
+    border: #000 solid thin;
+    object-fit: contain;
+}
+/* TO NOT BREAK IMG RESOLUTION AND KEEP IT IN CENTER */
+.book-image img {
+    width: 500px;
+    height: 600px;
+    object-fit: none;
+}
+/* FLEX BOX FOR SMALL IMAGES */
+.item-flex-container {
+    display: flex;
+    flex-direction: column;
+}
+/* SMALL IMAGES STYLING  */
+.item-flex-container img {
+    width: 150px; 
+    height: 190px;
+    margin: 10px;
+    border: #000 solid thin;
+}
+/* PRICE  */
+.price {
+    font-size: 36px;
+    background-color: greenyellow;
+}
+
+.price button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: #EEEEEE;
+    background-color: #4c9e9e;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.price button:hover{
+    opacity: 0.7;
+}
+/* DESCRIPTION STYLING */
+.description {
+    background-color: rgba(57,62,70,0.8);
+    color: #EEEEEE;
+    border: #000 solid thin;
+    height: auto;
+    margin: 20px auto;
+    width: 70%;
+}
+
+.description p {
+    font-size: 16px;
+}
+/* MEDIA QUERIES FOR DETAIL PAGE */
+@media screen and (max-width: 960px){
+    .flex-detail {
+        flex-direction: column;
+    }
+    .item-flex-container {flex-direction: row;}
+    .price {flex-direction: column;}
+    .description {width: 95%}
+}
+
+
+/* CONTACT PAGE STYLING */
+.contact-page {
+    margin: 30px;
+    width: 30%;
+    font-size: 17px;
+}
+
+.contact-page fieldset {
+    background-color: rgba(128,128,128,0.5);
+}
+
+/* LABEL SIZE STYLING */
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+/* SUBMIT RESET BUTTON STYLING */
+button[type=submit], button[type=reset] {
+    padding: 12px 20px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    float: center;
+}
+
+fieldset button:hover{
+    opacity: 0.8;
+}
+
+/* BOXES FOR INPUT STYLING */
+input[type=text], input[type=email], input[type=tel], textarea {
+    width: 400px;
+    padding: 12px 20px;
+    float: right;    
+}
+
+/* MEDIA QUERIES FOR CONTACT PAGE */
+@media screen and (max-width: 960px) {
+    input[type=text], input[type=tel], input[type=email], textarea {
+        width: 100%; margin-top:0;
+    }
+    .contact-page {
+        margin: auto;
+        text-align: center;
+        width: 90%;
+    }
+}

@@ -1,0 +1,232 @@
+<!--  RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Vũ Tiến Quang
+  ID: S3981278
+  Acknowledgement: Acknowledge the resources that you use here.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textbook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- TEXTBOOK BODY IN CSS -->
+<body class="textbook">
+    <!--HEADERS STARTS-->
+    <header>
+        <nav class="navbar">
+            <!-- LOGO -->
+            <div class="logo"><a href="/homepage.html">MUSHZ📚</a></div>
+
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links">
+
+                <!-- USING CHECKBOX HACK -->
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+                <!-- NAVIGATION MENUS -->
+                <div class="menu">
+
+                    <li><a href="/homepage.html">Home</a></li>
+                    <!-- FICTION DROPDOWN -->
+                    <li class="menu-item">
+                        <a href="/fiction.html">Fiction</a>
+
+                        <!-- DROPDOWN MENU -->
+                        <ul class="dropdown">
+                            <li><a href="/">Romance</a></li>
+                            <li><a href="/">Science fiction</a></li>
+                            <li><a href="/">Horror</a></li>
+                        </ul>
+                    </li>   
+                    <!-- NON-FICTION DROPDOWN -->
+                    <li class="menu-item">
+                        <a href="/non-fiction.html">Non-Fiction</a>
+
+                        <!-- DROPDOWN MENU -->
+                        <ul class="dropdown">
+                            <li><a href="/">History</a></li>
+                            <li><a href="/">Politics & Current Affairs</a></li>
+                            <li><a href="/">Business & Finance</a></li>
+                        </ul>
+                    </li>   
+                    <!-- TEXTBOOK DROPDOWN -->
+                    <li class="menu-item">
+                        <a href="/textbooks.html">Textbooks</a>
+
+                        <!-- DROPDOWN MENU -->
+                        <ul class="dropdown">
+                            <li><a href="/">Math & Science</a></li>
+                            <li><a href="/">Social Science</a></li>
+                            <li><a href="/">Professional and Technical</a></li>
+                        </ul>
+                    </li>   
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <!-- HEADER ENDS -->
+    <!-- BREADCRUMBS -->
+    <ul class="breadcrumb">
+        <li><a href="homepage.html">Home</a></li>
+        <li>Textbooks</li>
+    </ul>
+    <!-- BODY  -->
+    <h1>Textbooks</h1>
+    <!-- Cat 1 -->
+    <section class="rack">
+        <!-- TITLE -->
+        <h3 class="titles center">Math & Science</h3>
+        <article class="flex-container center">
+            <!-- ITEM 1 -->
+            <div class="items">
+                <img class="item-image" src="images\Textbooks\math1.jpeg" alt="The Math Book CP">
+                <!-- HOVER -->
+                <div class="middle">
+                    <div class="text">
+                        <a href="/">CHECK IT OUT NOW</a>
+                    </div>
+                </div>
+                <a href="/" class="item-link">
+                    <h4>The Math Book <br> Clifford & Pickover <br> 300.000 VND</h4>
+                </a>
+            </div>
+            <!-- ITEM 2 -->
+            <div class="items">
+                <img class="item-image" src="images\Textbooks\math2.jpeg" alt="The Math Book DK">
+                <!-- HOVER -->
+                <div class="middle">
+                    <div class="text">
+                        <a href="/">CHECK IT OUT NOW</a>
+                    </div>
+                </div>
+                <a href="/" class="item-link">
+                    <h4>The Math Book <br> DK <br> 300.000 VND</h4>
+                </a>
+            </div>
+            <!-- ITEM 3 -->
+            <div class="items">
+                <img class="item-image" src="images\Textbooks\math3.jpeg" alt="Machine Learning Book">
+                <!-- HOVER -->
+                <div class="middle">
+                    <div class="text">
+                        <a href="/">CHECK IT OUT NOW</a>
+                    </div>
+                </div>
+                <a href="/" class="item-link">
+                    <h4>Mathematics for Machine Learning <br> Marc Peter Deisenroth et al. <br> 300.000 VND</h4>
+                </a>
+            </div>
+        </article>
+    </section>
+    <!-- Cat 2 -->
+    <section class="rack">
+        <!-- TITLE -->
+        <h3 class="titles center">Social Science</h3>
+        <article class="flex-container center">
+            <!-- ITEM 1 -->
+            <div class="items">
+                <img class="item-image" src="images\Textbooks\social1.jpeg" alt="Public Funding">
+                <!-- HOVER -->
+                <div class="middle">
+                    <div class="text">
+                        <a href="/">CHECK IT OUT NOW</a>
+                    </div>
+                </div>
+                <a href="/" class="item-link">
+                    <h4>Social Science for What? <br> Mark Solovey <br> 300.000 VND</h4>
+                </a>
+            </div>
+            <!-- ITEM 2 -->
+            <div class="items">
+                <img class="item-image" src="images\Textbooks\social2.jpeg" alt="social science 2">
+                <!-- HOVER -->
+                <div class="middle">
+                    <div class="text">
+                        <a href="social2.html">CHECK IT OUT NOW!</a>
+                    </div>
+                </div>
+                <a href="social2.html" class="item-link">
+                    <h4>Science and Social Science: An Introduction<br> Malcolm Williams <br> 300.000 VND</h4>
+                </a>
+            </div>
+            <!-- ITEM 3 -->
+            <div class="items">
+                <img class="item-image" src="images\Textbooks\social3.jpeg" alt="The Structure of Social Science">
+                <!-- HOVER -->
+                <div class="middle">
+                    <div class="text">
+                        <a href="/">CHECK IT OUT NOW</a>
+                    </div>
+                </div>
+                <a href="/" class="item-link">
+                    <h4>The Structure of Social Science <br>
+                     Michael H. Lessnoff <br> 300.000 VND</h4>
+                </a>
+            </div>
+        </article>
+    </section>
+    <!-- Cat 3 -->
+    <section class="rack">
+        <!-- TITLE -->
+        <h3 class="titles center">Professional & Technical</h3>
+        <article class="flex-container center">
+            <!-- ITEM 1 -->
+            <div class="items">
+                <img class="item-image" src="images\Textbooks\tech1.jpeg" alt="Technical handbook">
+                <!-- HOVER -->
+                <div class="middle">
+                    <div class="text">
+                        <a href="/">CHECK IT OUT NOW</a>
+                    </div>
+                </div>
+                <a href="/" class="item-link">
+                    <h4>Handbook of Technical Diagnostics <br> Horst Czichos <br> 300.000 VND</h4>
+                </a>
+            </div>
+            <!-- ITEM 2 -->
+            <div class="items">
+                <img class="item-image" src="images\Textbooks\tech2.jpeg" alt="Car book">
+                <!-- HOVER -->
+                <div class="middle">
+                    <div class="text">
+                        <a href="/">CHECK IT OUT NOW</a>
+                    </div>
+                </div>
+                <a href="/" class="item-link">
+                    <h4>Technical Book of the Car <br> Jorge Lucendo <br> 300.000 VND</h4>
+                </a>
+            </div>
+            <!-- ITEM 3 -->
+            <div class="items">
+                <img class="item-image" src="images\Textbooks\tech3.jpeg" alt="The Math Book">
+                <!-- HOVER -->
+                <div class="middle">
+                    <div class="text">
+                        <a href="/">CHECK IT OUT NOW</a>
+                    </div>
+                </div>
+                <a href="/" class="item-link">
+                    <h4>Technical Blogging<br>Antonio Cangiano<br> 300.000 VND</h4>
+                </a>
+            </div>
+        </article>
+    </section>
+    <!-- BODY END -->
+
+    <!-- FOOTER STARTS  -->
+    <footer>
+        <a href="#">About Us</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+        <a href="#">Copyright</a>
+        <a href="/contact.html">Contact Us</a>
+    </footer>
+</body>
+</html>
