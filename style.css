@@ -58,9 +58,18 @@ li {
     justify-content: space-between;
     padding: 20px;
     background-color: #393E46;
-    color: #EEEEEE;
+    color: #EEEEEE;  
 }
 
+/* FOR STICKY MENU */
+.sticky {
+    position: fixed; 
+    top: 0;
+    width: 100%;
+}
+body:not(:first-child) {
+    margin-top: 80px;
+}
 .nav-links a {
     color: #fff;
 }
